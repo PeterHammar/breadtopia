@@ -9,7 +9,7 @@ class Game
     public:
         Game() {
           gameObjects = {"knife", "painting", "gun", "hammer"};
-          flag = {"00000000", "11111111", "22222222", "33333333"};
+          flag = {"00000000", "11111111", "00000000", "11111111"};
         }
         void selectGameObject(String name) {
             for(int i = 0; i < 4; i++) {

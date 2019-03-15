@@ -9,7 +9,7 @@ class Game
     public:
         Game() {
           gameObjects = {"knife", "painting", "gun", "hammer"};
-          flag = {"00000000", "11111111", "00000000", "11111111"};
+          flag = {"10000110", "10100100", "10000110", "10000110"};
         }
 
         /* Look, Open, Move, TurnOn, TurnOff, Taste, PickUp, Drop */

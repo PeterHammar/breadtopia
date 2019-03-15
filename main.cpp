@@ -2,6 +2,7 @@
 #include "Game.h"
 int main()
 {
+  // select object
   Game game;
   char ans;
   do {
@@ -10,4 +11,14 @@ int main()
     std::cout << "x to exit" << std::endl;
     std::cin >> ans;
   } while(ans != 'x');
+
+  // present interaction options for object
+
+  // select interaction
+
+  // present interaction specific options
+
+  // select interaction
+
+  // print outcome
 }

@@ -5,22 +5,23 @@ class Game
 {
     private:
         int currentObject;
-        std::string flag[4][8];
+        std::string flag = "00000000111111112222222233333333";
+        std::string gameObjects[4] = {"knife", "painting", "gun", "hammer"};
     public:
         Game() {
-          gameObjects = {"knife", "painting", "gun", "hammer"};
-          flag = {"00000000", "11111111", "22222222", "33333333"};
+
         }
-        void selectGameObject(String name) {
+        void selectGameObject(std::string name) {
             for(int i = 0; i < 4; i++) {
               if(gameObjects[i] == name) {
                 currentObject = i;
               }
             }
         }
-        void selectInteraction(GameObject theGameObject, String theInteraction);
-        void setInteraction(String theOptions);
-        void startInteraction();
-        void abortInteraction();
+        void selectInteraction() {
+            for(int i = currentObject * 8; i < (currentObject + 1) * 8; i++) {
+              std::cout << "Flag: " << flag[i] << std::endl;
+            }
+        }
 };
 #endif

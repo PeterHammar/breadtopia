@@ -8,7 +8,7 @@ class Game
     private:
         int currentObject;
         int currentInteraction;
-        std::string flag = "10101010110011001110001111110000";
+        std::string flag = "1000011010100100100011010000110";
         std::string gameObjects[4] = {"knife", "painting", "gun", "hammer"};
         std::string interactionTypes[8] = {"look", "open", "move", "turnon",
                                            "turnoff", "taste", "pickup", "drop"};

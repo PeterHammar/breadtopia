@@ -23,6 +23,7 @@ class Game
             }
         }
         void selectInteraction() {
+            std::cout << "Gameobject: " << gameObjects[currentObject] << std::endl;
             for(int i = currentObject * 8; i < (currentObject + 1) * 8; i++) {
               std::cout << interactionTypes[i - currentObject * 8] << ": ";
               if(flag[i] == '1')

@@ -9,3 +9,5 @@ int main()
     std::cin >> ans;
   } while(ans != 'x');
 }
+
+std::string flag[4][8]

@@ -4,11 +4,12 @@
 class Game
 {
     private:
-        std::string gameObjects[4];
         int currentObject;
+        std::string flag[4][8];
     public:
         Game() {
-          gameObjects = {"knife", "painting", "gun", "hammer"}
+          gameObjects = {"knife", "painting", "gun", "hammer"};
+          flag = {"00000000", "11111111", "22222222", "33333333"};
         }
         void selectGameObject(String name) {
             for(int i = 0; i < 4; i++) {

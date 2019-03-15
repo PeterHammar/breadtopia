@@ -11,6 +11,8 @@ class Game
           gameObjects = {"knife", "painting", "gun", "hammer"};
           flag = {"00000000", "11111111", "00000000", "11111111"};
         }
+
+        /* Look, Open, Move, TurnOn, TurnOff, Taste, PickUp, Drop */
         void selectGameObject(String name) {
             for(int i = 0; i < 4; i++) {
               if(gameObjects[i] == name) {

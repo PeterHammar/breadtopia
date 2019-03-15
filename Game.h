@@ -4,11 +4,19 @@
 class Game
 {
     private:
-        GameObjectRepository myGameObjects;
-        Scene currentScene;
-        Scene playerInventory
+        std::string gameObjects[4];
+        int currentObject;
     public:
-        void selectGameObject(String name);
+        Game() {
+          gameObjects = {"knife", "painting", "gun", "hammer"}
+        }
+        void selectGameObject(String name) {
+            for(int i = 0; i < 4; i++) {
+              if(gameObjects[i] == name) {
+                currentObject = i;
+              }
+            }
+        }
         void selectInteraction(GameObject theGameObject, String theInteraction);
         void setInteraction(String theOptions);
         void startInteraction();

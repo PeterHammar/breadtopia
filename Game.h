@@ -8,10 +8,10 @@ class Game
         Scene currentScene;
         Scene playerInventory
     public:
-        selectGameObject(String name);
-        selectInteraction(GameObject theGameObject, String theInteraction);
-        setInteraction(String theOptions);
-        startInteraction();
-        abortInteraction();
+        void selectGameObject(String name);
+        void selectInteraction(GameObject theGameObject, String theInteraction);
+        void setInteraction(String theOptions);
+        void startInteraction();
+        void abortInteraction();
 };
 #endif

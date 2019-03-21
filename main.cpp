@@ -15,13 +15,4 @@ int main()
     std::cin >> ans;
   } while(ans != 'x');
 
-  // present interaction options for object
-
-  // select interaction
-
-  // present interaction specific options
-
-  // select interaction
-
-  // print outcome
 }

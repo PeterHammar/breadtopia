@@ -1,0 +1,7 @@
+C:\Users\Mimslade\Documents\GitHub\breadtopia\Game.h: In member function 'void Game::selectInteraction()':
+C:\Users\Mimslade\Documents\GitHub\breadtopia\Game.h:47:44: error: invalid conversion from 'const char*' to '__gnu_cxx::__alloc_traits<std::allocator<char>, char>::value_type' {aka 'char'} [-fpermissive]
+                     state[currentObject] = "1";
+                                            ^~~
+C:\Users\Mimslade\Documents\GitHub\breadtopia\Game.h:50:44: error: invalid conversion from 'const char*' to '__gnu_cxx::__alloc_traits<std::allocator<char>, char>::value_type' {aka 'char'} [-fpermissive]
+                     state[currentObject] = "0";
+                                            ^~~
